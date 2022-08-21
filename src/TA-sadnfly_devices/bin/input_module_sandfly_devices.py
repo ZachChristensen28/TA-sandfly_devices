@@ -2,7 +2,7 @@
 # encoding = utf-8
 
 import json
-from SandflyAuth import SandflyAuth
+from Sandfly import Sandfly
 from sandfly_utils import *
 
 '''
@@ -83,7 +83,7 @@ def collect_events(helper, ew):
         )
         helper.log_info(event_log)
 
-        sandfly = SandflyAuth(
+        sandfly = Sandfly(
             username=username,
             password=password,
             hostname=hostname,

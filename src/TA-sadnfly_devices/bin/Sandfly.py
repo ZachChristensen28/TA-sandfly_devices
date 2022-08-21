@@ -5,9 +5,9 @@ from sandfly_utils import *
 import json
 
 
-class SandflyAuth:
+class Sandfly:
     """
-    Handles authentication to Sandfly
+    Handles interaction to Sandfly
     """
 
     def __init__(self, username, password, hostname, ca_cert, verify_cert, use_proxy):
