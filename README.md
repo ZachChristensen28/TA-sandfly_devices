@@ -6,11 +6,10 @@
 
 The Sandfly Security™ devices add-on for Splunk allows device data produced by the application to be used with the [CIM](https://docs.splunk.com/Splexicon:CommonInformationModel). This enables the data to work with other Splunk Apps, such as Enterprise Security to build the Asset Database.
 
-```text
-Disclaimer
+## Disclaimer
 
-This add-on is not affiliated with Sandfly Security™ and is not sponsored or sanctioned by the Sandfly Security™ team. As such, the included documentation and configuration does not contain information on how to get started with the Sandfly Security™ application. Rather, this add-on serves as a guide to help visualize the data in Splunk. Please visit https://www.sandflysecurity.com/ for more information.
-```
+> This add-on is not affiliated with Sandfly Security™ and is not sponsored or sanctioned by the Sandfly Security™ team. As such, the included documentation and configuration does not contain information on how to get started with the Sandfly Security™ application. Rather, this add-on serves as a guide to help visualize the data in Splunk. Please visit https://www.sandflysecurity.com/ for more information.
+
 
 ## About
 
