@@ -36,7 +36,11 @@ def collect_events(helper, ew):
     password = global_account['password']
     ca_cert = global_account['ca_cert']
     verify_cert = global_account['verify_cert']
+    sourcetype = helper.get_sourcetype()
     host_summary = helper.get_arg('host_summary')
+
+    if host_summary:
+        sourcetype = sourcetype + ":summary"
 
     stanza = str(helper.get_input_stanza_names())
 
@@ -127,7 +131,7 @@ def collect_events(helper, ew):
             event = helper.new_event(
                 source=helper.get_input_type(),
                 index=helper.get_output_index(),
-                sourcetype=helper.get_sourcetype(),
+                sourcetype=sourcetype,
                 data=json.dumps(data),
                 host=hostname
             )
